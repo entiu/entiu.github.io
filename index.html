@@ -3,13 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="">
+  <link rel="shortcut icon" href="images/logo_01_W.png">
   <title>Laurențiu Toader</title>
 </head>
 <body>
+  <div id="cursor"></div>
+
   <div class="container">
-    <p>Heya 👋</p>
+    <div class="hello-row">
+      <p class="hello-message">
+        <span class="hello-prefix" style="--left: 0; --translateX: -100%;"></span>
+        <span>Laurențiu</span>
+        <span class="hello-suffix" style="--right: 0; --translateX: 100%;"></span>
+      </p>
+
+      <p class="hello-details" style="--delay: 1.5s">I code for the web and draw stuff.</p>
+    </div>
+
+    <div class="menu-row">
+      <p class="menu-option underline" data-clickable style="--delay: 1.75s" data-toggle="story">my story</p>
+      <p class="menu-option underline" data-clickable style="--delay: 2s" data-toggle="work">my work</p>
+      <p class="menu-option underline" data-clickable style="--delay: 2.25s" data-toggle="self">my self</p>
+    </div>
+
+    <div class="sections-row">
+      <div class="section my-story" data-section="story">
+        <h1>how to be me</h1>
+
+        <p class="story-act">step 1</p>
+        <p>get born and raised in south-eastern, post-communist Romania, blessed to have caring parents but doomed to grow up in Brăila</p>
+
+        <p class="story-act">step 2</p>
+        <p>find Lego toys interesting | spend some time on your first PC, making out how it works and what a 'crack' folder is</p>
+
+        <p class="story-act">step 3</p>
+        <p>get into drawing (don't read too much about it, just do it every now and again) | fool around in Photoshop, that seems cool</p>
+
+        <p class="story-act">step 4</p>
+        <p>computer science is fun, but hard, but fun | study it in middle school, high school and university, see where that takes you</p>
+
+        <p class="story-act">step 5</p>
+        <p>graphics and computers go hand in hand when you want to create beautiful stuff for the web | can this turn into a living?</p>
+      </div>
+
+      <div class="section my-work" data-section="work">
+        <h1>stuff I made</h1>
+
+        <p class="story-act">digital sketches</p>
+        <!--p>lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, nemo</p-->
+
+        <div class="gallery"></div>
+      </div>
+
+      <div class="section my-self" data-section="self">
+        <h1>now what else</h1>
+
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>
