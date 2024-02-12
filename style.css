@@ -274,6 +274,7 @@ body {
   display: none;
   margin: 0 auto;
   padding: 3em 0 min(2em, 5vw);
+  padding: 3em 0;
   width: 100%;
 
   opacity: var(--section-opacity);
@@ -380,7 +381,7 @@ body {
   100% { opacity: 1; }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .gallery-entry {
     padding: 0;
     width: 100%;

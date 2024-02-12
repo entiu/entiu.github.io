@@ -5,14 +5,14 @@
     "path": "tic-tac-tic-tac-toe"
   },
   {
-    "name": "Quickslide",
-    "imageSrc": "images/work_quickslide.png",
-    "path": "quickslide"
-  },
-  {
     "name": "Hangman",
     "imageSrc": "images/work_hangman.png",
     "path": "hangman"
+  },
+  {
+    "name": "Pianope",
+    "imageSrc": "images/work_pianope.png",
+    "path": "pianope"
   },
   {
     "name": "RPS",
@@ -20,8 +20,8 @@
     "path": "rps"
   },
   {
-    "name": "Pianope",
-    "imageSrc": "images/work_pianope.png",
-    "path": "pianope"
+    "name": "Quickslide",
+    "imageSrc": "images/work_quickslide.png",
+    "path": "quickslide"
   }
 ]
