@@ -1,0 +1,82 @@
+[
+  {
+    "name": "FILS",
+    "desc": "New faculty logo, who dis?",
+    "imageSrc": "images/work_fils.png"
+  },
+  {
+    "name": "Fabrica",
+    "desc": "Being kind to the others deserves its own logo.",
+    "imageSrc": "images/work_fabrica-01.png"
+  },
+  {
+    "name": "Stockmeat",
+    "desc": "I butchered it.",
+    "imageSrc": "images/work_stockmeat.png"
+  },
+  {
+    "name": "FAST",
+    "desc": "Building apps with the speed of <span class='strikethrough'>light</span> a functional locomotor system.",
+    "imageSrc": "images/work_fast.png"
+  },
+  {
+    "name": "Glass Dev",
+    "desc": "Software development <span class='italic'>and</span> work transparency? Sign me up.",
+    "imageSrc": "images/work_glass-dev.jpg"
+  },
+  {
+    "name": "BPM",
+    "desc": "Business Process Management, in <span class='strikethrough'>a nutshell</span> an atom.",
+    "imageSrc": "images/work_BPM-logo.jpg"
+  },
+  {
+    "name": "Kidex",
+    "desc": "The app your family didn't know they needed. Till now.",
+    "imageSrc": "images/work_kidex.png"
+  },
+  {
+    "name": "PG",
+    "desc": "Programming Group — simple names call for simple logos.",
+    "imageSrc": "images/work_PG.png"
+  },
+  {
+    "name": "Icon font",
+    "desc": "We have FontAwesome at home. FontAwesome at home:",
+    "imageSrc": "images/work_icon-font.png"
+  },
+  {
+    "name": "Icons v1",
+    "desc": "Bits and bobs to kill time.",
+    "imageSrc": "images/work_icons-01.png"
+  },
+  {
+    "name": "Icons v2",
+    "desc": "Bits and bobs to kill time.",
+    "imageSrc": "images/work_icons-02.png"
+  },
+  {
+    "name": "Icons v3",
+    "desc": "Bits and bobs to kill time.",
+    "imageSrc": "images/work_icons-03.png"
+  },
+  {
+    "name": "Underground 2.0",
+    "desc": "A reinvented Bucharest underground map.",
+    "imageSrc": "images/work_underground.jpg"
+  },
+  {
+    "name": "Bucks",
+    "desc": "Or as we call them, <span  class='italic'>Ochiul Dracului</span>.",
+    "imageSrc": "images/work_bucks.png"
+  },
+  {
+    "name": "Chap",
+    "desc": "Some pal of mine. Pay him no mind.",
+    "imageSrc": "images/work_chap.png"
+  },
+  {
+    "name": "Heal the world",
+    "desc": "Make it a better place.",
+    "imageSrc": "images/work_recycle.png"
+  }
+]

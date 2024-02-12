@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --clr-indicator-blue: #1c79f1;
+    --clr-indicator-red: #db1f83;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    width: min(80vw, 600px);
+}
+
+#indicator {
+    align-items: center;
+    border-radius: 150px;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-image 250ms ease-in-out, filter 250ms ease-out;
+    width: 300px;
+}
+
+#mask {
+    /* filter: blur(80px) saturate(0) contrast(0) brightness(.5) sepia(1); */
+    /* filter: none; */
+    background-image: linear-gradient(45deg, var(--clr-indicator-blue) 0%, var(--clr-indicator-red) 100%);
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    transition: opacity 100ms ease-in-out;
+    width: 100%;
+}
+
+#mask.removed {
+    opacity: 0;
+}
+
+#arrow {
+    /* animation: swirlIn 100ms forwards; */
+    transition: transform 50ms ease-in-out;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.mode-info {
+    --display: block;
+    display: none;
+    text-align: right;
+}
+
+.mode-info .heading {
+    justify-content: flex-end;
+}
+
+[data-active-mode="survival"] [data-for="survival"],
+[data-active-mode="timeTrial"] [data-for="timeTrial"],
+[data-active-mode="stopwatch"] [data-for="stopwatch"],
+[data-active-mode="freeRoam"] [data-for="freeRoam"] {
+    display: var(--display);
+}
+
+.heading {
+    display: flex;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.target-points {
+    --display: block;
+    display: none;
+}
+
+#game-settings-container {
+    border-radius: calc(12px + 1rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.blocker {
+    background-color: #75757533;
+    cursor: not-allowed;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+*.hidden {
+    display: none;
+}
+
+.game-settings {
+    --display: flex;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    display: none;
+    gap: .7rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.game-settings .title {
+    background-color: #fff;
+    color: #666;
+    font-size: .8rem;
+    left: 50%;
+    padding: 0 1em;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.game-settings button {
+    flex: 1;
+}
+
+.btn {
+    background: #f6f6f6;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .6em 1em;
+    transition: background-color .3s ease, border-color .3s ease, color .3s ease;
+}
+
+.btn-start {
+    width: calc(100% - 2rem);
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.btn.active {
+    border-color: var(--clr-indicator-blue);
+    color: var(--clr-indicator-blue);
+}
+
+@keyframes swirlIn {
+    from { transform: scale(0) rotate(0deg) }
+    to { transform: scale(1) rotate(var(--arrow-rotate-deg)) }
+}

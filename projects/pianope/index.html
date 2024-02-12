@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="I'm Laurențiu. I code for the web and draw stuff. Check me out, maybe.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../images/logo_W.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Laurențiu Toader | Pianope</title>
+</head>
+
+<body>
+  <div class="outer-container">
+    <div class="piano-container">
+      <div class="piano"></div>
+      <div class="piano-controls">
+        <img id="chord-icon" src="img/keys-03.svg" alt="keys">
+        <p id="chord"></p>
+        <input type="text" id="chord-name" placeholder="name...">
+        <button id="chord-submit">Save</button>
+      </div>
+    </div>
+    <div id="chord-list"></div>
+  </div>
+
+  <p id="sound-tip">
+    <span>Useful stuff:</span>
+    · <kbd>Alt</kbd> / <kbd>⌥</kbd> + <kbd>S</kbd> — hear what your current slection of keys sounds like;<br>
+    · <kbd>Alt</kbd> / <kbd>⌥</kbd> + <kbd>C</kbd> — clear your current selection of keys.
+  </p>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

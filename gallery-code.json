@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Tic-tac-tic-tac-toe",
+    "imageSrc": "images/work_tic-tac.png",
+    "path": "tic-tac-tic-tac-toe"
+  },
+  {
+    "name": "Quickslide",
+    "imageSrc": "images/work_quickslide.png",
+    "path": "quickslide"
+  },
+  {
+    "name": "Hangman",
+    "imageSrc": "images/work_hangman.png",
+    "path": "hangman"
+  },
+  {
+    "name": "RPS",
+    "imageSrc": "images/work_rps.png",
+    "path": "rps"
+  },
+  {
+    "name": "Pianope",
+    "imageSrc": "images/work_pianope.png",
+    "path": "pianope"
+  }
+]

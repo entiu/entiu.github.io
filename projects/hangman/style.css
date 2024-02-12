@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --clr-bg-05: #3ab138;
+    --clr-bg-04: #90ba31;
+    --clr-bg-03: #e6c229;
+    --clr-bg-02: #f17105;
+    --clr-bg-01: #d11149;
+
+    --clr-dark-01: #031927;
+    --clr-dark-02: #2a475a;
+    --clr-dark-03: #50758c;
+    --clr-dark-04: #9dd1f1;
+
+    --shadow:   0 1px 1px rgba(0, 0, 0, .05),
+                0 2px 2px rgba(0, 0, 0, .05),
+                0 4px 4px rgba(0, 0, 0, .05),
+                0 8px 6px rgba(0, 0, 0, .05);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr-bg-05);
+    height: 100%;
+    transition: background-color 300ms ease-in;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(600px, 80%);
+}
+
+.board {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin: 64px 0;
+    padding: 16px;
+}
+
+#word {
+    color: var(--clr-dark-02);
+    display: flex;
+    font-family: 'Merriweather', serif;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-bottom: 2px solid whitesmoke;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+#keyboard {
+    margin-bottom: 16px;
+}
+
+#keyboard [id^='row-'] {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4px;
+}
+
+#row-qwe {
+    /* nothing to do here */
+}
+
+#row-asd {
+    width: 90%;
+    margin-left: 10px;
+}
+
+#row-zxc {
+    width: 70%;
+    margin-left: 34px;
+}
+
+button[id^='key-'] {
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    font-size: 125%;
+    font-weight: 900;
+    height: 54px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#row-qwe button {
+    width: calc((100% - 9 * 4px) / 10);
+}
+
+#row-asd button {
+    width: calc((100% - 8 * 4px) / 9);
+}
+
+#row-zxc button {
+    width: calc((100% - 6 * 4px) / 7);
+}
+
+button[id^='key-'].pressed {
+    background-color: aqua;
+}
+
+button[id^='key-'].used {
+    background-color: slategrey;
+    color: silver;
+    cursor: not-allowed;
+}
+
+#tries {
+    color: var(--clr-dark-02);
+    border-top: 2px solid whitesmoke;
+    padding-top: 16px;
+}
+
+#sad {
+    display: none;
+}
+
+#definition h2 {
+    font-family: 'Merriweather', serif;
+}
+
+#definition h2,
+#definition h4 {
+    color: var(--clr-dark-02);
+    margin-top: 1em;
+}
+
+.phonetic {
+    font-weight: normal;
+    opacity: .5;
+}
+
+.part-of-speech,
+.origin {
+    display: block;
+    font-style: italic;
+    margin: 8px 0;
+    opacity: .75;
+}
+
+.meaning {
+    display: block;
+    margin-bottom: 2px;
+}
+
+#restart {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    transition: background-color 100ms ease-in;
+    width: 100%;
+}
+
+#restart:hover {
+    background-color: rgba(0, 0, 0, .15);
+}

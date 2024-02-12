@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="I'm Laurențiu. I code for the web and draw stuff. Check me out, maybe.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../images/logo_W.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Laurențiu Toader | Quickslide</title>
+</head>
+
+<body>
+  <div class="container" data-active-mode="survival">
+    <div id="indicator">
+      <img id="arrow" src="arrow.png" alt="arrow">
+      <div id="mask"></div>
+    </div>
+
+    <div id="game-info">
+      <p>Points: <span class="heading"><span id="points"></span><span class="target-points" data-for="stopwatch">/<span id="target">100</span></span></span></p>
+      <p class="mode-info" data-for="survival">Lives: <span class="heading" id="lives"></span></p>
+      <p class="mode-info" data-for="timeTrial">Time:<span class="heading" id="timer"><span id="minutes"></span>:<span id="seconds"></span></span></p>
+      <p class="mode-info" data-for="stopwatch">Time:<span class="heading" id="stopwatch"><span id="sw_minutes">00</span>:<span id="sw_seconds">00</span>,<span id="sw_milliseconds">00</span></span></p>
+      <p class="mode-info" data-for="freeRoam"></p>
+    </div>
+
+    <div id="game-settings-container">
+      <div class="game-settings game-modes" style="display: flex;">
+        <span class="title">Game mode</span>
+        <button class="btn btn-mode active" data-mode="survival">Survival</button>
+        <button class="btn btn-mode" data-mode="timeTrial">Time trial</button>
+        <button class="btn btn-mode" data-mode="stopwatch">Stopwatch</button>
+        <button class="btn btn-mode" data-mode="freeRoam">Free roam</button>
+      </div>
+
+      <div class="game-settings game-lives" data-for="survival">
+        <span class="title">Life count</span>
+        <button class="btn btn-lives active" data-lives="10">10</button>
+        <button class="btn btn-lives" data-lives="5">5</button>
+        <button class="btn btn-lives" data-lives="3">3</button>
+        <button class="btn btn-lives" data-lives="1">1</button>
+      </div>
+
+      <div class="game-settings game-timers" data-for="timeTrial">
+        <span class="title">Timer</span>
+        <button class="btn btn-timer active" data-time="90">1:30</button>
+        <button class="btn btn-timer" data-time="60">1:00</button>
+        <button class="btn btn-timer" data-time="30">0:30</button>
+        <button class="btn btn-timer" data-time="10">0:10</button>
+      </div>
+
+      <div class="game-settings game-targets" data-for="stopwatch">
+        <span class="title">Point target</span>
+        <button class="btn btn-target active" data-target="100">100</button>
+        <button class="btn btn-target" data-target="50">50</button>
+        <button class="btn btn-target" data-target="25">25</button>
+        <button class="btn btn-target" data-target="10">10</button>
+      </div>
+
+      <div class="game-settings" data-for="freeRoam"></div>
+
+      <div class="blocker hidden"></div>
+    </div>
+
+    <button class="btn btn-start" onclick="startGame()">Start</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
