@@ -78,7 +78,7 @@ const swiper = new Swiper('.reviews-swiper', {
 let wordIndex = -1;
 const wordSliderContainer = document.querySelector('.word-slider-container');
 const wordSlider = document.querySelector('.word-slider');
-const wordSliderDelay = 4000;
+const wordSliderDelay = 5000;
 const words = [
   "contracte",
   "taxe",
@@ -105,11 +105,11 @@ var switchWord = () => {
     wordIndex = ++wordIndex % words.length;
     wordSlider.textContent = words[wordIndex];
     wordSliderContainer.style.left = `${-wordSlider.offsetWidth / 2}px`;
-  }, 500)
 
-  window.setTimeout(() => {
-    updateWordSliderStyle(1, 0);
-  }, 750);
+    window.setTimeout(() => {
+      updateWordSliderStyle(1, 0);
+    }, 250);
+  }, 250);
 }
 
 window.onload = () => {
