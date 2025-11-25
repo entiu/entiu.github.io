@@ -63,7 +63,7 @@ const swiper = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
   loop: true,
   pagination: {
-    el: '.reviews-swiper-pagination',
+    el: '.swiper-pagination',
     clickable: true,
   },
   spaceBetween: 40,
