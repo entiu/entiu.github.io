@@ -148,7 +148,7 @@ h1 {
 /* Hero */
 
 #hero {
-  height: 100vh;
+  height: 100svh;
 }
 
 #hero .container {
