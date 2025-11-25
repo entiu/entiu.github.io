@@ -12,7 +12,7 @@
     0 8px 4px rgba(0, 0, 0, 0.09),
     0 16px 8px rgba(0, 0, 0, 0.09),
     0 32px 16px rgba(0, 0, 0, 0.09);
-  --swiper-navigation-size: 64px;
+  --swiper-pagination-bottom: 4rem;
   --swiper-theme-color: var(--clr-accent);
 }
 
@@ -376,7 +376,6 @@ h1 {
   padding: .4em 1.5em;
   border: none;
   border-radius: .6rem;
-  /* background-color: #2e7fff; */
   background-color: hsl(from var(--clr-accent) h s l / 0.85);
   display: block;
   color: white;
@@ -412,10 +411,6 @@ h1 {
 }
 
 /* Back-to-top button */
-
-/* #topic {
-  color: #5BB9E8;
-} */
 
 #backToTop {
   position: fixed;
@@ -461,9 +456,10 @@ h1 {
   width: 100%;
   height: 190px;
   margin-top: 4rem;
+  overflow: hidden;
 }
 
-.reviews-swiper-slide {
+.reviews-swiper .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -474,23 +470,23 @@ h1 {
   gap: 1rem;
 }
 
-.reviews-swiper-slide:hover {
+.reviews-swiper .swiper-slide:hover {
   background-color: hsl(from var(--clr-light) h s l / 0.075);
 }
 
-.reviews-swiper-slide p {
+.reviews-swiper .swiper-slide p {
   font-size: var(--font-size-text);
   font-weight: 300;
   color: var(--clr-light);
 }
 
-.reviews-swiper-slide p:first-child {
+.reviews-swiper .swiper-slide p:first-child {
   font-size: calc(var(--font-size-text) * 0.7);
   color: var(--clr-accent);
   opacity: 0.75;
 }
 
-.reviews-swiper-slide p:nth-child(2) {
+.reviews-swiper .swiper-slide p:nth-child(2) {
   font-style: italic;
 }
 
@@ -514,7 +510,7 @@ footer {
     --font-size-title: 2rem;
     --font-size-lead: 1rem;
     --font-size-text: .9rem;
-    --swiper-pagination-bottom: 0.5rem;
+    --swiper-pagination-bottom: 4rem;
   }
 
   .navbar {
