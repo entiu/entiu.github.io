@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3d4541;
+      }
+
+      .cls-2 {
+        fill: #0f1219;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        mix-blend-mode: soft-light;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+        stroke: #e3e3e3;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-7 {
+        fill: #966a30;
+      }
+
+      .cls-8 {
+        fill: #efefef;
+        opacity: .1;
+      }
+
+      .cls-9 {
+        fill: #fbb03b;
+      }
+
+      .cls-5 {
+        mix-blend-mode: overlay;
+        opacity: .4;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="208.95" y1="208.95" x2="32.61" y2="32.61" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18291c"/>
+      <stop offset="1" stop-color="#172a19" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-6">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g>
+          <rect class="cls-3" width="200" height="200" rx="15.84" ry="15.84"/>
+          <g>
+            <rect class="cls-2" x="36.99" y="24.92" width="126.02" height="150.15" rx="10" ry="10"/>
+            <rect class="cls-7" x="90.9" y="32.92" width="64" height="10" rx="2" ry="2"/>
+            <rect class="cls-8" x="44.99" y="151.08" width="109.91" height="16" rx="2" ry="2"/>
+            <line class="cls-5" x1="95.41" y1="37.92" x2="150.38" y2="37.92"/>
+            <g>
+              <rect class="cls-7" x="90.9" y="107.92" width="64" height="10" rx="2" ry="2"/>
+              <line class="cls-5" x1="95.41" y1="112.92" x2="150.38" y2="112.92"/>
+            </g>
+            <g>
+              <rect class="cls-7" x="72.9" y="67.92" width="82" height="15" rx="2" ry="2"/>
+              <line class="cls-5" x1="77.77" y1="72.92" x2="150.38" y2="72.92"/>
+              <line class="cls-5" x1="95.41" y1="77.92" x2="150.38" y2="77.92"/>
+            </g>
+            <g>
+              <line class="cls-4" x1="44.99" y1="52.92" x2="154.9" y2="52.92"/>
+              <line class="cls-4" x1="44.99" y1="57.92" x2="81.41" y2="57.92"/>
+            </g>
+            <g>
+              <line class="cls-4" x1="44.99" y1="127.92" x2="154.9" y2="127.92"/>
+              <line class="cls-4" x1="44.99" y1="132.92" x2="100" y2="132.92"/>
+            </g>
+            <g>
+              <line class="cls-4" x1="44.99" y1="92.92" x2="154.9" y2="92.92"/>
+              <line class="cls-4" x1="44.99" y1="97.92" x2="128.55" y2="97.92"/>
+            </g>
+            <rect class="cls-1" x="31.99" y="19.92" width="20" height="20" rx="4" ry="4"/>
+            <path class="cls-9" d="M47.82,27.04v6.34c0,.26-.21.47-.47.47h-10.72c-.26,0-.47-.21-.47-.47v-6.34c0-.44.55-.64.83-.3l1.72,2.11c.19.23.54.23.73,0l2.19-2.68c.19-.23.54-.23.73,0l2.19,2.68c.19.23.54.23.73,0l1.72-2.1c.28-.34.83-.14.83.3Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
