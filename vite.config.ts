@@ -5,6 +5,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/entiu.github-io",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

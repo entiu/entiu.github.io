@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://entiu.github.io",
+  "homepage": "https://entiu.github.io/entiu.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
